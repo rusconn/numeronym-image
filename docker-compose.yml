@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  app:
+    image: numeronym-dev:1.0.0
+    build:
+      context: dockerfiles/dev
+    working_dir: /app
+    volumes:
+      - .:/app:cached
+      - target:/app/target
+      - /var/run/docker.sock:/var/run/docker.sock
+    tty: true
+
+volumes:
+  target:

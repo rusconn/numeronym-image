@@ -1,0 +1,28 @@
+{
+  "name": "numeronym-image-dev",
+  "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "settings": {
+    "lldb.executable": "/usr/bin/lldb",
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "terminal.integrated.profiles.linux": {
+      "fish": {
+        "path": "/usr/bin/fish",
+        "args": ["-l"]
+      }
+    }
+  },
+  "extensions": [
+    "serayuzgur.crates",
+    "rust-lang.rust-analyzer",
+    "tamasfe.even-better-toml",
+    "davidanson.vscode-markdownlint",
+    "irongeek.vscode-env",
+    "mhutchie.git-graph",
+    "ms-ceintl.vscode-language-pack-ja",
+    "ms-azuretools.vscode-docker",
+    "artdiniz.quitcontrol-vscode"
+  ],
+  "shutdownAction": "stopCompose"
+}

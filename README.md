@@ -17,6 +17,14 @@
 
 コマンドライン引数に指定した単語をヌメロニムにして出力する。
 
+## Dockerイメージのビルドコマンド
+
+プロジェクトルートで
+
+```sh
+docker build -t rusconn/numeronym:1.0.0 -f dockerfiles/prod/Dockerfile .
+```
+
 ## 実行イメージ
 
 ```sh

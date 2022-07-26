@@ -1,0 +1,5 @@
+# ビルドコンテキストから除外するリスト
+*
+!src
+!Cargo.lock
+!Cargo.toml
